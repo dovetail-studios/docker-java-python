@@ -1,6 +1,5 @@
 FROM python:3.6.6-stretch
 
-
 # A few reasons for installing distribution-provided OpenJDK:
 #
 #  1. Oracle.  Licensing prevents us from redistributing the official JDK.
@@ -65,6 +64,3 @@ RUN set -ex; \
 
 # see CA_CERTIFICATES_JAVA_VERSION notes above
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-
-RUN pip install JPype1==0.6.3
-
